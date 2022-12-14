@@ -1,0 +1,302 @@
+#entry {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: auto;
+
+}
+
+#entry img{
+    height: 100px; 
+    width: 100px; 
+    object-fit: contain; 
+    border-radius: 65%;
+}
+
+* {
+    padding: 0%;
+}
+
+
+.container {
+    position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+    cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Six columns side by side */
+.column {
+    float: left;
+    width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+    opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+    opacity: 1;
+}
+
+.header,body{
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(Images/homebackground.jpg);
+    background-position: center;
+    position: relative;
+}
+
+.sidenav, .sidenav2 {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: #042331;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-bottom: 300px;
+    user-select: none;
+}
+
+.sidenav a, .sidenav2 a {
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 65px;
+    font-size: 20px;
+    color: aliceblue;
+    padding-left: 40px;
+    box-sizing: border-box;
+    border-top: 1px solid rgb(255, 255, 255, .1);
+    border-bottom: 1px solid black;
+    transition: .3s;
+}
+
+.sidenav a:hover, .sidenav2 a:hover {
+    color: #d63939;
+}
+
+h2 {
+    color: white;
+}
+
+.sidenav .closebtn, .sidenav2 .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+#logo {
+    height: 100px;
+    width: 100px;
+    object-fit: contain;
+
+}
+
+#logo:checked~.sidebar {
+    left: 0;
+}
+
+.mgs
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+#head {
+    color: red;
+    font-size: 30px;
+    font-family: verdana;
+    text-align: center;
+}
+
+.nav-links {
+    text-align: right;
+}
+
+.nav-links,
+ul,
+li {
+    font-family: verdana;
+    font-size: 20px;
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: static;
+
+
+}
+
+a {
+    color: rgb(255, 0, 140);
+    text-decoration: none;
+}
+
+#company {
+    font-family: verdana;
+    color: white;
+}
+
+/*Contacts*/
+
+body {
+    box-sizing: border-box;
+}
+
+.text {
+    width: 300px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    display: block;
+
+}
+
+#country {
+    width: 300px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    background-color: #858585;
+    display: block;
+}
+
+#subject {
+    height: 200px;
+    width: 300px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    display: block;
+}
+
+#submit {
+    background-color: #aa0404;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: block;
+}
+
+footer {
+    color: aliceblue;
+}
+
+.con,
+.container {
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)), url(Images/slide4.jpg);
+
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding: 10px;
+}
+
+label {
+    color: aliceblue;
+}
+
+.float {
+    float: right;
+    width: 40%;
+    height: 50%;
+}
+
+/*required fields error*/
+.error{
+    color: red;
+}
